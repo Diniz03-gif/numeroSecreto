@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Estrutura base da pagina do jogo do numero secreto. -->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Carrega os estilos visuais da interface. -->
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo do Número Secreto</title>
+</head>
+
+<body>
+    <!-- Container principal com imagem, mensagens e area de informacoes do jogo. -->
+    <div class="container">
+        <div class="container__conteudo">
+            <img src="./img/robot.png" alt="robô mergulhador" class="container__imagem-robo" />
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1>Jogo do <span class="container__texto-azul">número</span> secreto</h1>
+                    <h2>Descubra um número entre 1 e 10.</h2>
+                </div>
+                <input
+                    type="number"
+                    class="container__input"
+                    id="input-chute"
+                    placeholder="Digite o número"
+                    min="1"
+                    max="10"
+                    step="1"
+                />
+                <button class="container__botao" id="btn-chutar">Chutar</button>
+            </div>
+        </div>
+    </div>
+    <!-- Script com a logica do jogo; defer garante execucao apos montar o HTML. -->
+    <script src="app.js" defer></script>
+</body>
+
+</html>
