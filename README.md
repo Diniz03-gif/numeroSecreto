@@ -7,7 +7,7 @@
 Este é um jogo de adivinhação de números, onde o usuário tenta adivinhar um número escolhido aleatoriamente pelo computador.
 
 ## Como Jogar
-1. O computador escolhe um número entre 1 e 100.
+1. O computador escolhe um número entre 1 e 10.
 2. O jogador deve tentar adivinhar o número.
 3. O computador informa se o palpite é muito baixo, muito alto ou correto.
 
